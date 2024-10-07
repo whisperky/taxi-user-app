@@ -50,18 +50,18 @@ export default function RootLayout() {
               headerShown: false,
             }}
           />
-          {/* <Stack.Screen
+          <Stack.Screen
             name="phone"
             options={{
               headerShown: false,
             }}
-          /> */}
-          {/* <Stack.Screen
+          />
+          <Stack.Screen
             name="phone-2"
             options={{
               headerShown: false,
             }}
-          /> */}
+          />
         </Stack>
       </ThemeProvider>
     </AppContext.Provider>
