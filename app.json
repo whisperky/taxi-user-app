@@ -1,11 +1,11 @@
 {
   "expo": {
     "name": "calltaxi",
-    "slug": "calltaxi",
+    "slug": "call-taxi",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/logo.png",
-    "scheme": "calltaxi",
+    "scheme": "call-taxi",
     "userInterfaceStyle": "automatic",
     "splash": {
       "image": "./assets/images/logo.png",
