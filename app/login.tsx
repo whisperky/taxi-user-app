@@ -1,5 +1,12 @@
 import React, { useState, useEffect, useContext } from "react";
-import { View, Text, TouchableOpacity, Image, StatusBar } from "react-native";
+import {
+  View,
+  Text,
+  TouchableOpacity,
+  Image,
+  StatusBar,
+  Linking,
+} from "react-native";
 import { StackNavigationProp } from "@react-navigation/stack";
 import { useNavigation } from "@react-navigation/native";
 import { useRouter } from "expo-router";
@@ -56,6 +63,13 @@ const LoginScreen = () => {
 
   const handleRegisterPress = () => {
     router.push("/phone");
+  };
+
+  const handleUserAppPress = () => {
+    // Replace 'com.example.userapp' with the actual package name of the User app
+    Linking.openURL(
+      "https://play.google.com/store/apps/details?id=com.example.userapp"
+    );
   };
 
   if (!fontsLoaded) {
@@ -144,7 +158,7 @@ const LoginScreen = () => {
           <View className="flex-row justify-center w-full px-[40px]">
             <TouchableOpacity
               className="w-[80%] items-center"
-              onPress={handleRegisterPress}
+              onPress={handleUserAppPress}
             >
               <Text className="font-['Alexandria-Regular'] text-base p-[5px] text-[#8cd96e]">
                 Looking for User app?
