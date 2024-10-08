@@ -7,7 +7,7 @@ import {
 import "react-native-reanimated";
 import { Stack } from "expo-router";
 
-import { useColorScheme } from "@/hooks/useColorScheme";
+import { useColorScheme } from "../hooks/useColorScheme";
 
 // Create the context
 export const AppContext = createContext<{
@@ -50,18 +50,25 @@ export default function RootLayout() {
               headerShown: false,
             }}
           />
-          {/* <Stack.Screen
+          <Stack.Screen
             name="phone"
             options={{
               headerShown: false,
             }}
-          /> */}
-          {/* <Stack.Screen
+          />
+          <Stack.Screen
             name="phone-2"
             options={{
               headerShown: false,
             }}
-          /> */}
+          />
+          <Stack.Screen
+            name="dashboard"
+            options={{
+              headerShown: true,
+              title: "User Dashboard",
+            }}
+          />
         </Stack>
       </ThemeProvider>
     </AppContext.Provider>

@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "my-app",
+    "name": "taxiapp",
     "slug": "my-app",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -13,13 +13,15 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.whisper3029.myapp"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.whisper3029.myapp"
     },
     "web": {
       "bundler": "metro",
@@ -31,6 +33,13 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "bc89d06b-f52a-47e3-8ff4-959e3c10a6bc"
+      }
     }
-  }
+  },
+  "name": "taxiapp",
+  "displayName": "taxiapp"
 }
